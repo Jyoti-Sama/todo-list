@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+}
+
+nav{
+    height: 75px;
+    width: 100%;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+
+}
+nav ul li{
+    list-style: none;
+    margin: 0 20px 0 20px;
+    font-size: 1.3em;
+    cursor: pointer;
+    background-color: silver;
+}
+
+nav ul li:nth-child(1){
+    position: absolute;
+    color: aqua;
+    left: 0;
+    background-color: silver;
+}
+nav ul li:nth-child(2){
+    color: aqua;
+}
+nav ul li:nth-child(3){
+    position: absolute;
+    color: aqua;
+    right: 0;
+    background-color: silver;
+}
+
+nav ul li:nth-child(1):hover{color: coral;}
+nav ul li:nth-child(2):hover{color: coral;}
+nav ul li:nth-child(3):hover{color: coral;}
+
+nav ul li:nth-child(1):active{color: cornflowerblue;}
+nav ul li:nth-child(2):active{color: cornflowerblue;}
+nav ul li:nth-child(3):active{color: cornflowerblue;}
+
+
+.container{
+    width: 100%;
+    height: auto;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container h2{
+    margin: 20px 0 20px 0;
+}
+.item{
+    position: relative;
+    display: flex;
+    margin: 10px 0 10px 0;
+    align-items: center;
+    background-color: silver;
+    height: 50px;
+    width: 300px;
+    padding: 0 10px 0 10px;
+
+     /* make the list items unselectable */
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+}
+
+.close{
+    background-color: silver;
+    height: 50px;
+    width: 50px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 5px;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+}
+.close:hover{
+    background-color: rgba(255, 0, 0, 0.459);
+    color: white;
+}
+
+ /* Set all odd list items to a different color (zebra-stripes) */
+ ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+
+  /* Style the input */
+  input {
+    margin: 0 0 10px 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+
+
+
+
+
+
+
+
+
+
